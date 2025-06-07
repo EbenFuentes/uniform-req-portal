@@ -23,5 +23,19 @@ module.exports = {
       if (error) return res.status(500).send(error)
       res.redirect("/")
     }
+  },
+  getLoginPage: async(req, res) => {
+    try {
+        res.render("login.ejs")
+    } catch (error) {
+        if (error) return res.status(500).send(error)
+    }
+  },
+  getSignupPage: async(req, res) => {
+    try {
+        res.render("signup.ejs")
+    } catch (error) {
+        if (error) return res.status(500).send(error)
+    }
   }
 }
