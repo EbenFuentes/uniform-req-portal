@@ -15,4 +15,4 @@ const itemListSchema = new mongoose.Schema({
   }
 })
 
-module.exports = mongoose.model('securityInventory', itemListSchema, 'inventory')
+module.exports = mongoose.model('test', itemListSchema, 'uniformDB')
