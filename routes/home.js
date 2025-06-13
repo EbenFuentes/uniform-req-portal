@@ -5,7 +5,7 @@ const express = require("express")
 const router = express.Router()
 const homeController = require('../controllers/home')
 
-router.get('/', homeController.getIndex) //read 
+//router.get('/', homeController.getIndex) //read 
 router.get('/login', homeController.getLoginPage) //read
 router.get('/signup', homeController.getSignupPage) //read
 
